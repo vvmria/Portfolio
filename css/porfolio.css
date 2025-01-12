@@ -1,0 +1,122 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*deslizar clic en liks menu*/
+html{ 
+    scroll-behavior: smooth;
+}
+
+
+/* menu */
+.contenedor--header {
+    background: rgb(87, 85, 85);
+    padding: 20px 0;
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+/*contenidos*/
+.header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 20px;
+    text-decoration:none;
+}
+/*nombre que va a ser el logo*/
+.logo_a{
+    font-size: 36px;
+    color: rgb(239, 127, 8);
+    text-decoration: none;
+}
+.header__list{
+    display: flex;
+    list-style: none;
+}
+/*estilos de liks*/
+.header__link{
+    text-align:none;
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+/*color de links*/
+.header__link:hover{
+    color:rgb(239, 127, 8) ;
+}
+/*menu para responsive*/
+.nav__responsive{
+    background-color: rgb(239, 127, 8);
+    color:white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}
+/*seccion inicial*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/banner.png);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+/*tarjeta*/
+.contenido--banner{
+    padding: 20px;
+    background-color: rgb(63, 63, 63);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+/*imagen*/
+.img__maria{
+    margin-top: 50px;
+    border:5px solid rgb(239, 127, 8);
+    width: 80%;
+    margin: auto;
+    border-radius: 20%;
+}
+/*Nombre*/
+.banner__nombre{
+    margin-top: 20px;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/*espcialidad*/
+.banner__descripcion{
+    font-size: 1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    padding-top: 12px;
+}
+/*formatos de iconos de rrss*/
+.redes__link{
+    color:white ;
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid rgb(239, 127, 8);
+    border-radius: 12px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition:.2s ;
+}
+/*transiocion naranja*/
+.redes__link:hover{
+    background-color:rgb(239, 127, 8) ;
+}
+
