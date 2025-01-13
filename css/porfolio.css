@@ -14,7 +14,7 @@ html{
 /* menu */
 .contenedor--header {
     background: rgb(87, 85, 85);
-    padding: 20px 0;
+    padding: 10px 0;
     position: sticky;
     width: 100%;
     left: 0;
@@ -27,15 +27,15 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:15px 20px;
+    padding:10px 15px;
     text-decoration:none;
 }
-/*nombre que va a ser el logo*/
-.logo_a{
-    font-size: 36px;
-    color: rgb(239, 127, 8);
-    text-decoration: none;
+/*logo*/
+.logo {
+    width: 200px;  
+    height: auto; 
 }
+/*alinera navs*/
 .header__list{
     display: flex;
     list-style: none;
@@ -120,40 +120,154 @@ html{
     background-color:rgb(239, 127, 8) ;
 }
 
+
+
+
 /*seccion sobre mi*/
 .sobremi{
     background-color:rgb(239, 127, 8) ;
     color: white;
-    padding:20px 20px;
+    padding:40px 40px;
 
 }
-
+/*como se ve el contenido 1*/
 .sobremi__contenido{
     max-width: 1200px;
-    margin: auto;
+    margin: 20px;
 }
+/*estilos titulo sobre mi*/
 .sobremi__title{
     font-size: 3em;
     text-align: center;
     padding: 20px 0;
 
 }
+/*estilos texto*/
 .sobremi__text{
     font: 18px;
     line-height: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: justify;
 }
-.list__datos{
-    border: 3px solid white;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color:rgb(168, 113, 55);
-
-}
+/*sobre mi lista datos personales*/
 .sobremi__list{
     display: flex;
     margin: 30px;
-    
+    flex-wrap: wrap;
+}
+/*sobremi titulo datos personales*/
+.datos__title{
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+/*lista de los datos*/
+.datos__list{
+    list-style: none;
+    margin-right: 80px;
+}
+.datos__item{
+    margin-bottom: 6px;
+}
+.datos__itemcolor{
+    display: inline-block;
+    color: black;
 }
 
+/*sobre mi intereses*/
+.sobremi__intereses{
+    width: 50%;
+    
+}
+/*sobre mi titulo intereses*/
+.intereses__title{
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+
+}
+
+/*cada item*/
+.intereses__item{
+    margin-bottom: 6px;
+    text-align: justify;
+}
+/*apartado sin title de intereses*/
+.intereses__list{
+    list-style: none;
+    margin-right: 50px;
+}
+/*quitar subrayado download*/
+.descargar__cv{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+/*darle forma a la caja download*/
+.descargarcv__boton {
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/*HABILIDADES*/
+
+.habilidades{
+    background-color: gray;
+    color: white;
+    padding: 25px 40px;
+    flex-wrap: wrap;
+}
+.habilidades__contenido{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    
+}
+.habilidades__title{
+    font-size: 2em;
+    color:rgb(255, 255, 255) ;
+    padding: 10px;
+    text-align: center;
+}
+.habilidades__item-title{
+    font-size: 25px;
+    color: rgb(239, 127, 8);
+    margin:10px;
+    padding: 10px;
+    
+}
+.habilidades__lista{
+    font-size: 1em;
+    border: 2px solid rgb(239, 127, 8);
+}
+.habilidades__titulo-y-item{
+    padding: 20px;
+    border: 2px solid rgb(239, 127, 8);
+    border-radius: 10px;
+    margin: 20px;
+}
+.habilidades__sublista {
+    list-style-type: none; 
+    padding-left: 0;
+}
+.habilidades__subitem-ap{
+    color: blue;
+    border: 1px solid wi;
+}
+.habilidades__subitem-ai{
+    color: orange;
+}
+.habilidades__subitem-ad{
+    color:purple ;
+}
+.habilidades__subitem-app{
+    color: rgb(86, 50, 141);
+}
+.habilidades__subitem-aae{
+    color: rgb(9, 28, 134);
+}
