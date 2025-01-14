@@ -1,3 +1,24 @@
+/* los colores principales*/
+
+:root {
+    --color-principal: #ef7f08;
+    --color-secundario: #575555;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-gris: #808080;
+    --color-gris-oscuro: #3f3f3f;
+    --color-azul: #0000ff;
+    --color-naranja: #ffa500;
+    --color-morado: #800080;
+    --color-lila: #56328d;
+    --color-azul-marino: #091c86;
+    --color-texto: #333333;
+    --color-transparent: transparent;
+    --color-gradient-dark: #1e2326cc;
+    --color-gradient-light: #1e2326;
+}
+
+
 /* reset */
 * {
     margin: 0;
@@ -56,14 +77,8 @@
 }
 
 
-/* menú para responsive */
-.nav__responsive {
-    background-color: #ef7f08;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: none;
-}
+
+
 
 /* seccion inicial */
 
@@ -349,7 +364,12 @@
 .galeria-tatuajes__img:hover {
     transform: scale(1.1);
 }
-
+/*para pantalla pequeña*/
+@media (max-width: 768px) {
+    .galeria-tatuajes__grid{
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
 /* EXPERIENCIA */
 .curriculum {
     background-color: #ef7f08;
@@ -396,6 +416,7 @@
     color: #ffffff;
 }
 
+/*seccion portfolio*/
 /*   imágenes portfolio */
 
 .portfolio__img {
@@ -437,33 +458,29 @@
     padding: 20px;
 }
 
-/* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);/*opacidad el ultimo*/
+/* para pantallas más pequeñas  */
+@media (max-width: 768px) {
+    .portfolio__contenido {
+        grid-template-columns: 1fr 1fr; /* Cambiar de 3 columnas a 2 */
+    }
+
+    .portfolio__img {
+        max-width: 100%;
+        margin: 10px;
+    }
 }
-/*contenido de como se va a ver cuando clicle*/
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 50%;
-    max-width: 400px;
+
+/* Media Query para pantallas aún más pequeñas (móviles muy pequeños) */
+@media (max-width: 480px) {
+    .portfolio__contenido {
+        grid-template-columns: 1fr; /* Cambiar a 1 columna */
+    }
+
+    .portfolio__text {
+        font-size: 14px; /* Reducir el tamaño del texto */
+    }
 }
-/*cerrar img*/
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-}
+
 
 
 /* estilos de la sección de contacto */

@@ -1,34 +1,25 @@
-// Primero definimos todas las constantes y variables
+// Obtener todas las imágenes
+const images = document.querySelectorAll('.portfolio__img');
 
-// Constantes para los elementos del modal
-const modal = document.getElementById("myModal");
-const modalImg = document.getElementById("img01");
-const caption = document.getElementById("caption");
+// Crear el lightbox (modal)
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox);
 
-// Handler para abrir el modal
-function openModalHandler(imgElement) {
-    modal.style.display = "block";
-    modalImg.src = imgElement.src;
-    caption.innerHTML = imgElement.alt;
-}
+// Crear la imagen dentro del lightbox
+const lightboxImage = document.createElement('img');
+lightbox.appendChild(lightboxImage);
 
-// Handler para cerrar el modal
-function closeModalHandler() {
-    modal.style.display = "none";
-}
-
-// Asignación de eventos usando foreach (deberíamos hacerlo una sola vez)
-window.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.portfolio__img');
-    
-    // Asignar el evento click a cada imagen de forma eficiente
-    images.forEach(function(image) {
-        image.addEventListener('click', function() {
-            openModalHandler(image);
-        });
+// Agregar evento click a las imágenes
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        lightboxImage.src = image.src;  // Asignar la imagen seleccionada al lightbox
+        lightbox.style.display = 'flex';  // Mostrar el lightbox
     });
+});
 
-    // Asignar el evento click para cerrar el modal
-    modal.addEventListener('click', closeModalHandler);
+// Cerrar el lightbox cuando se hace clic fuera de la imagen
+lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';  // Ocultar el lightbox
 });
 

@@ -16,8 +16,8 @@
         <header class="header">
     
             <div>
-                <picture></picture>
-                <a href="/" class="logo-link" >
+                <picture>
+                <a href="logo" class="logo-link" title="logo" >
                     <img src="./assets/logo_vvmr.png" alt="Logo" class="logo">
                 </a>
             </picture>
@@ -26,19 +26,18 @@
     
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#inicio" onclick="sleccionar()">Inicio</a></li>
-                    <li class="header__item"><a class="header__link" href="#sobremi" onclick="sleccionar()">Sobre Mí</a></li>
-                    <li class="header__item"><a class="header__link" href="#habilidades" onclick="sleccionar()">Habilidades</a></li>
-                    <li class="header__item"><a class="header__link" href="#tatuajes" onclick="sleccionar()">Tatuajes</a></li>
-                    <li class="header__item"><a class="header__link" href="#curriculum" onclick="sleccionar()">Curriculum</a></li>
-                    <li class="header__item"><a class="header__link" href="#portfolio"onclick="sleccionar()">Portfolio</a></li>
-                    <li class="header__item"><a class="header__link" href="#contacto" onclick="sleccionar()">Contacto</a></li>
+                    <li class="header__item"><a class="header__link" href="#inicio" title="inicio" >Inicio</a></li>
+                    <li class="header__item"><a class="header__link" href="#sobremi" title="sobremi">Sobre Mí</a></li>
+                    <li class="header__item"><a class="header__link" href="#habilidades" title="habilidades" >Habilidades</a></li>
+                    <li class="header__item"><a class="header__link" href="#tatuajes" title="tatuajes">Tatuajes</a></li>
+                    <li class="header__item"><a class="header__link" href="#curriculum" title="curriculum">Curriculum</a></li>
+                    <li class="header__item"><a class="header__link" href="#portfolio" title="portfolio">Portfolio</a></li>
+                    <li class="header__item"><a class="header__link" href="#contacto" title="contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav__responsive" onclick="mostrar=mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+
         </header>
+        
     </div>
     <main class="main_content">
         <!-- inicio -->
@@ -67,7 +66,7 @@
                 <p class="sobremi__text">
                     Para mí, el arte es una forma de dejar huella, ya sea en la piel o en un proyecto digital. Combino Tatuajes y Diseño Gráfico para crear piezas únicas y con significado.
                     Cada tatuaje es personal. Escucho ideas, trabajo en diseños exclusivos y creo algo que va más allá de un dibujo: un símbolo que te acompañará siempre. 
-                    El diseño es donde todo empieza. Desde logotipos hasta ilustraciones, mi objetivo es que cada proyecto comunique y conecte. Siempre busco que lo que creo cuente algo y deje impacto. <br>
+                    El diseño es donde todo empieza. Desde logotipos hasta ilustraciones, mi objetivo es que cada proyecto comunique y conecte. Siempre busco que lo que creo cuente algo y deje impacto. 
                     Si tienes una idea, hablemos. Estoy aquí para crear contigo. </p>
     
                     <div class="sobremi__list">
@@ -75,15 +74,15 @@
                             <h3 class="datos__title">Datos Personales</h3>
                             <ul class="datos__list">
                                 <li class="datos__item">
-                                    <strong class="datos__itemcolor">Telefono</strong><br>
+                                    <strong class="datos__itemcolor">Telefono</strong>
                                     +34 675076859
                                 </li>
                                 <li class="datos__item">
-                                    <strong class="datos__itemcolor">Gmail</strong><br>
+                                    <strong class="datos__itemcolor">Gmail</strong>
                                     mariavalcarcelruiz01@gmail.com
                                 </li>
                                 <li class="datos__item">
-                                    <strong class="datos__itemcolor">Ubicaciones</strong><br>
+                                    <strong class="datos__itemcolor">Ubicaciones</strong>
                                     Linares,Jaén & Granada.
                                 </li>
                             </ul>
@@ -223,51 +222,47 @@
     <!-- Portfolio-->
     <section id="portfolio" class="portfolio">
         <h2 class="portfolio__title">Portfolio</h2>
-            <p class="portfolio__text">Estos son algunos de los proyectos que he realizado.<br> ¡Espero que te gusten!</p>
+            <p class="portfolio__text">Estos son algunos de los proyectos que he realizado.</p> 
+            <p class="portfolio__text"> ¡Espero que te gusten!</p>
         <div class="portfolio__contenido">
             <div class="portfolio__card">
-                <picture><img src="./assets/images/pryoectouno__estrella.png" alt="pryoectouno__estrella"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
+                <picture><img src="./assets/images/pryoectouno__estrella.png" alt="pryoectouno__estrella"  class="portfolio__img"  loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectodos_dibujo.png" alt="proyectodos_dibujo"  class="portfolio__img"   loading="lazy" onclick="openModal(this)"></picture>
+                <picture><img src="./assets/images/proyectodos_dibujo.png" alt="proyectodos_dibujo"  class="portfolio__img"   loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectotres__dibujo.png" alt="proyectotres__dibujo"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
+                <picture><img src="./assets/images/proyectotres__dibujo.png" alt="proyectotres__dibujo"  class="portfolio__img"  loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectocuatro_cartel.png" alt="proyectocuatro_cartel"  class="portfolio__img"   loading="lazy" onclick="openModal(this)"></picture>
+                <picture><img src="./assets/images/proyectocuatro_cartel.png" alt="proyectocuatro_cartel"  class="portfolio__img"   loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectocinco_corazon.png" alt="proyectocinco_corazon"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
+                <picture><img src="./assets/images/proyectocinco_corazon.png" alt="proyectocinco_corazon"  class="portfolio__img"  loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectoseis__pantone.png" alt="proyectoseis__pantone"  class="portfolio__img"   loading="lazy" onclick="openModal(this)"></picture>
+                <picture><img src="./assets/images/proyectoseis__pantone.png" alt="proyectoseis__pantone"  class="portfolio__img"   loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectosiet_underground.png" alt="proyectosiet_underground"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
+                <picture><img src="./assets/images/proyectosiet_underground.png" alt="proyectosiet_underground"  class="portfolio__img"  loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture></picture><img src="./assets/images/proyectocho_revista.png" alt="proyectocho_revista"  class="portfolio__img" loading="lazy" onclick="openModal(this)"></picture>
+                <picture></picture><img src="./assets/images/proyectocho_revista.png" alt="proyectocho_revista"  class="portfolio__img" loading="lazy" ></picture>
                 
             </div>
             <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectonueve_htd.png" alt="proyectonueve_htd"  class="portfolio__img" loading="lazy" onclick="openModal(this)"></picture>
-            </div>
-
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
+                <picture><img src="./assets/images/proyectonueve_htd.png" alt="proyectonueve_htd"  class="portfolio__img" loading="lazy"></picture>
             </div>
             
     </section>
+
     <!-- contacto-->
     <section id="contacto" class="contacto">
         <div class="contacto__contenido">
@@ -293,7 +288,7 @@
     <footer>
         <div class="footer__contenido">
             <picture><img src="./assets/logo_vvmr.png" alt="logo" class="footer_logo" loading="lazy"></picture>
-            <p class="footer_text">&copy; 2025 Porfolio | María Valcarcel Ruiz</p>
+            <p class="footer_text">&copy; 2025 Portfolio | María Valcarcel Ruiz</p>
             
             
         </div>
