@@ -26,6 +26,7 @@
     align-items: center;
     padding: 10px 10px;
     text-decoration: none;
+    font-size: 18px;
 }
 
 /* logo */
@@ -54,6 +55,7 @@
     color: #ef7f08;
 }
 
+
 /* menú para responsive */
 .nav__responsive {
     background-color: #ef7f08;
@@ -64,8 +66,12 @@
 }
 
 /* seccion inicial */
+
+.main-content {
+    flex-grow: 1; /* El contenido se ajustará para ocupar el espacio disponible */
+}
 .inicio {
-    background: linear-gradient(to top, #1e2326cc, #1e2326), url(../img/banner.png);
+    background: linear-gradient(to top, #1e2326cc, #1e2326), url(../images/banner_inicial.png);
     background-size: cover;
     width: 100vw;
     color: #ffffff;
@@ -85,7 +91,7 @@
 
 /* imagen */
 .img__maria {
-    margin: 50px auto 0 auto; /* 50px arriba, auto izquierda y derecha, 0 abajo */
+    margin: 50px auto 0 auto;
     border: 5px solid #ef7f08;
     width: 80%;
     border-radius: 20%;
@@ -93,14 +99,14 @@
 
 /* Nombre */
 .banner__nombre {
-    margin: 20px 0 0 0; /* 20px arriba, 0 abajo, 0 izquierda y derecha */
-    font-size: 3em;
+    margin: 20px 0 0 0; 
+    font-size: 2.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Especialidad */
 .banner__descripcion {
-    font-size: 1em;
+    font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     padding-top: 12px;
@@ -127,6 +133,9 @@
     background-color: #ef7f08;
 }
 
+
+
+
 /* seccion sobre mi */
 .sobremi {
     background-color: #ef7f08;
@@ -143,7 +152,7 @@
 
 /* estilos titulo sobre mi */
 .sobremi__title {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     padding: 20px 0;
 }
@@ -167,6 +176,7 @@
 .datos__title {
     letter-spacing: 3px;
     margin:0 0 5px 0;
+    font-size: 25px;
 }
 
 /* lista de los datos */
@@ -190,7 +200,8 @@
 /* sobre mi título intereses */
 .intereses__title {
     letter-spacing: 5px;
-    margin: 0 0 10px 0; /* 0 arriba, 0 izquierda y derecha, 10px abajo */
+    margin: 0 0 10px 0;
+    font-size: 25px; 
 }
 
 /* cada item */
@@ -243,7 +254,7 @@
 
 /* título habilidades */
 .habilidades__title {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -300,14 +311,14 @@
 /* contenedor */
 .galeria-tatuajes {
     padding: 40px;
-    background: linear-gradient(to top, #1e2326cc, #1e2326), url(../img/banner.png);
+    background: linear-gradient(to top, #1e2326cc, #1e2326), url(../images/banner_inicial.png);
     text-align: center;
     width: 100vw;
 }
 
 /* título */
 .galeria-tatuajes__title {
-    font-size: 36px;
+    font-size: 2.5em;
     color: #ffffff;
     margin:0 0 20px 0;
 }
@@ -315,7 +326,7 @@
 /* formato de colocación */
 .galeria-tatuajes__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adaptable a diferentes pantallas */
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -351,7 +362,7 @@
 .curriculum__title {
     margin: 0 0 20px 0;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #ffffff;
     flex-wrap: wrap;
 }
@@ -366,7 +377,7 @@
 /* título formación */
 .formacion__title {
     padding: 10px;
-    font-size: 40px;
+    font-size: 25px;
     color: #ffffff;
 }
 
@@ -414,14 +425,14 @@
 }
 /*titutlo de seccion*/
 .portfolio__title {
-    font-size: 40px;
+    font-size: 2.5em;
     color: #ef7f08;
     text-align: center;
     padding: 30px;
 }
 /*pequeño texto depues del titulo*/
 .portfolio__text {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 20px;
 }
@@ -460,7 +471,7 @@
     background-color: #ef7f08;
     color: #333;
     padding: 40px;
-    width: 100%;
+    width: 100vw;
 }
 
 /* contenedor del formulario */
@@ -476,7 +487,7 @@
     margin:0 0 20px 0;
 }
 
-/* E formulario */
+/*  formulario */
 .contacto__formulario {
     display: flex;
     flex-direction: column;
@@ -524,5 +535,24 @@
 .contacto__btn:hover {
     background-color: #78353533;
 }
+
+/*footer*/
+.footer__contenido{
+    background-color:#575555 ;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.footer_logo{
+    width: 150px;
+    margin: 20px 0 20px 60px;
+    height: auto;
+}
+.footer_text{
+    text-align: center;
+    margin: 20px 0 20px 80px;
+}
+
 
 

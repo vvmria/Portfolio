@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de María Valcárcel. Diseñadora gráfica y tatuadora en formación. Proyectos de diseño gráfico, UX/UI y tatuajes.">
+
     <title>Portfolio - María Valcárcel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/porfolio.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="page">
     <!-- Encabezado -->
@@ -14,34 +16,38 @@
         <header class="header">
     
             <div>
-                <a href="/" class="logo-link" title="Página principal">
-                    <img src="img/logo..png" alt="Logo" class="logo">
+                <picture></picture>
+                <a href="/" class="logo-link" >
+                    <img src="./assets/logo_vvmr.png" alt="Logo" class="logo">
                 </a>
+            </picture>
             </div>
             
     
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#inicio" title="Ir a Inicio">Inicio</a></li>
-                    <li class="header__item"><a class="header__link" href="#sobremi" title="Sobre mí">Sobre Mí</a></li>
-                    <li class="header__item"><a class="header__link" href="#habilidades" title="Mis habilidades">Habilidades</a></li>
-                    <li class="header__item"><a class="header__link" href="#tatuajes" title="Ver mis tatuajes">Tatuajes</a></li>
-                    <li class="header__item"><a class="header__link" href="#curriculum" title="Mi currículum">Curriculum</a></li>
-                    <li class="header__item"><a class="header__link" href="#portfolio" title="Ver mi portfolio">Portfolio</a></li>
-                    <li class="header__item"><a class="header__link" href="#contacto" title="Contacto">Contacto</a></li>
+                    <li class="header__item"><a class="header__link" href="#inicio" onclick="sleccionar()">Inicio</a></li>
+                    <li class="header__item"><a class="header__link" href="#sobremi" onclick="sleccionar()">Sobre Mí</a></li>
+                    <li class="header__item"><a class="header__link" href="#habilidades" onclick="sleccionar()">Habilidades</a></li>
+                    <li class="header__item"><a class="header__link" href="#tatuajes" onclick="sleccionar()">Tatuajes</a></li>
+                    <li class="header__item"><a class="header__link" href="#curriculum" onclick="sleccionar()">Curriculum</a></li>
+                    <li class="header__item"><a class="header__link" href="#portfolio"onclick="sleccionar()">Portfolio</a></li>
+                    <li class="header__item"><a class="header__link" href="#contacto" onclick="sleccionar()">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav__responsive">
+            <div class="nav__responsive" onclick="mostrar=mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
     </div>
-    <main>
+    <main class="main_content">
         <!-- inicio -->
         <section id="inicio" class="inicio">
             <div class="contenido--banner">
+                
                 <div class="contenedor__img">
-                    <img src="./img/foto cv.PNG" alt="María" class="img__maria">
+                    
+                    <picture><img src="./assets/images/foto cv.PNG" alt="María" class="img__maria"></picture>
                 </div>
                 <h1 class="banner__nombre">María Valcárcel</h1>
                 <h2 class="banner__descripcion">Diseñadora y tatuadora en formación - Diseño gráfico - Diseño Web - Diseño UX/UI</h2>
@@ -107,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="archivo/Cv_MaríaValcárcel.pdf" download="Cv_MaríaValcárcel" class="descargar__cv" title="Descargar mi CV">
+                    <a href="assets/archivo/Cv_MaríaValcárcel.pdf" download="Cv_MaríaValcárcel" class="descargar__cv" title="Descargar mi CV">
                         <div class="descargarcv__boton">
                             Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
                         </div>
@@ -116,7 +122,7 @@
             </div>
         </section>
 
-    <!-- habilidades -->
+    <!-- habilidades de adobe -->
     <section id="habilidades" class="habilidades">
         <h2 class="habilidades__title">Habilidades</h2>
         <div class="habilidades__contenido">
@@ -146,10 +152,9 @@
                             <strong class="habilidades__subitem-aae">Adobe After Effects</strong> 
                         </li>
                     </ul>
-
                 </div>
             </div>
-    
+            <!-- habiliades personales -->
             <div class="habilidades__titulo-y-item">
                 <h3 class="habilidades__item-title">Habilidades Personales</h3>
                 <ul class="habilidades__sublista">
@@ -177,22 +182,22 @@
         <h2 class="galeria-tatuajes__title">Galería de Tatuajes</h2>
         <div class="galeria-tatuajes__grid">
             <div class="galeria-tatuajes__item">
-                <img src="img/tatto1.png" alt="Tatuaje 1" class="galeria-tatuajes__img">
+                <picture><img src="./assets/images/tatto1.png" alt="Tatuaje 1" class="galeria-tatuajes__img"  loading="lazy"></picture>
             </div>
             <div class="galeria-tatuajes__item">
-                <img src="img/tattoo2.png" alt="Tatuaje 2" class="galeria-tatuajes__img">
+                <picture><img src="./assets/images/tattoo2.png" alt="Tatuaje 2" class="galeria-tatuajes__img"  loading="lazy"></picture>
             </div>
             <div class="galeria-tatuajes__item">
-                <img src="img/tattoo3.png" alt="Tatuaje 3" class="galeria-tatuajes__img">
+                <picture><img src="./assets/images/tattoo3.png" alt="Tatuaje 3" class="galeria-tatuajes__img"  loading="lazy"></picture>
             </div>
             <div class="galeria-tatuajes__item">
-                <img src="img/tattoo4.png" alt="Tatuaje 4" class="galeria-tatuajes__img">
+                <picture><img src="./assets/images/tattoo4.png" alt="Tatuaje 4" class="galeria-tatuajes__img"  loading="lazy"></picture>
             </div>
             <div class="galeria-tatuajes__item">
-                <img src="img/tattoo5.png" alt="Tatuaje 5" class="galeria-tatuajes__img">
+                <picture><img src="./assets/images/tattoo5.png" alt="Tatuaje 5" class="galeria-tatuajes__img"  loading="lazy"></picture>
             </div>
             <div class="galeria-tatuajes__item">
-                <img src="img/tattoo6.png" alt="Tatuaje 6" class="galeria-tatuajes__img">
+                <picture><img src="./assets/images/tattoo6.png" alt="Tatuaje 6" class="galeria-tatuajes__img"  loading="lazy"></picture>
             </div>
         </div>
     </section>
@@ -221,48 +226,47 @@
             <p class="portfolio__text">Estos son algunos de los proyectos que he realizado.<br> ¡Espero que te gusten!</p>
         <div class="portfolio__contenido">
             <div class="portfolio__card">
-                <img src="img/p1.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture><img src="./assets/images/pryoectouno__estrella.png" alt="pryoectouno__estrella"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/p2.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture><img src="./assets/images/proyectodos_dibujo.png" alt="proyectodos_dibujo"  class="portfolio__img"   loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/p3.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture><img src="./assets/images/proyectotres__dibujo.png" alt="proyectotres__dibujo"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/pt4.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture><img src="./assets/images/proyectocuatro_cartel.png" alt="proyectocuatro_cartel"  class="portfolio__img"   loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/PT5.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture><img src="./assets/images/proyectocinco_corazon.png" alt="proyectocinco_corazon"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/PT6.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture><img src="./assets/images/proyectoseis__pantone.png" alt="proyectoseis__pantone"  class="portfolio__img"   loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/pt7.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture><img src="./assets/images/proyectosiet_underground.png" alt="proyectosiet_underground"  class="portfolio__img"  loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/pt8.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
+                <picture></picture><img src="./assets/images/proyectocho_revista.png" alt="proyectocho_revista"  class="portfolio__img" loading="lazy" onclick="openModal(this)"></picture>
                 
             </div>
             <div class="portfolio__card">
-                <img src="img/pt9.png" alt="imagen"  class="portfolio__img" onclick="openModal(this)">
-                
+                <picture><img src="./assets/images/proyectonueve_htd.png" alt="proyectonueve_htd"  class="portfolio__img" loading="lazy" onclick="openModal(this)"></picture>
             </div>
 
-            <div id="myModal" class="modal" onclick="closeModal()">
+            <div id="myModal" class="modal">
                 <span class="close">&times;</span>
                 <img class="modal-content" id="img01">
                 <div id="caption"></div>
             </div>
-            <script src="js/portfolio.js"></script>
+            
     </section>
     <!-- contacto-->
     <section id="contacto" class="contacto">
@@ -285,7 +289,16 @@
             </form>
         </div>
     </section>
-    
-</main>
+    </main>
+    <footer>
+        <div class="footer__contenido">
+            <picture><img src="./assets/logo_vvmr.png" alt="logo" class="footer_logo" loading="lazy"></picture>
+            <p class="footer_text">&copy; 2025 Porfolio | María Valcarcel Ruiz</p>
+            
+            
+        </div>
+    </footer>
+
+    <script src="js/portfolio.js"></script>
 </body>
 </html>
