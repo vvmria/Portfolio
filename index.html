@@ -22,9 +22,13 @@
                 </a>
             </picture>
             </div>
+        <!--menu hamburguesa-->
+            <button class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             
     
-            <nav class="header__nav">
+            <nav class="header__nav" id="nav-menu">
                 <ul class="header__list">
                     <li class="header__item"><a class="header__link" href="#inicio" title="inicio" >Inicio</a></li>
                     <li class="header__item"><a class="header__link" href="#sobremi" title="sobremi">Sobre Mí</a></li>
@@ -273,7 +277,7 @@
                     <input type="text" id="nombre" name="nombre" class="contacto__input" required>
                 </div>
                 <div class="contacto__input">
-                    <label for="email" class="contacto__label">Correo electrónico</label>
+                    <label for="emasil" class="contacto__label">Correo electrónico</label>
                     <input type="email" id="email" name="email" class="contacto__input" required>
                 </div>
                 <div class="contacto__input">
@@ -285,6 +289,7 @@
         </div>
     </section>
     </main>
+
     <footer>
         <div class="footer__contenido">
             <picture><img src="./assets/logo_vvmr.png" alt="logo" class="footer_logo" loading="lazy"></picture>
@@ -294,6 +299,6 @@
         </div>
     </footer>
 
-    <script src="js/portfolio.js"></script>
+    <script src="./assets/js/galeria.js"></script>
 </body>
 </html>
