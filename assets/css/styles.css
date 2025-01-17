@@ -7,6 +7,13 @@
     
 }
 
+html {
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
 
 
 /* Contenedores */
@@ -589,10 +596,10 @@
     margin: 20px 0 20px 60px;
     height: auto;
 }
+
 .footer_text{
     text-align: center;
     margin: 20px 0 20px 80px;
 }
-
 
 
