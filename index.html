@@ -1,304 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de María Valcárcel. Diseñadora gráfica y tatuadora en formación. Proyectos de diseño gráfico, UX/UI y tatuajes.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio de María Valcárcel. Diseñadora gráfica y tatuadora en formación. Proyectos de diseño gráfico, UX/UI y tatuajes.">
 
     <title>Portfolio - María Valcárcel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="page">
-    <!-- Encabezado -->
-    <div class="contenedor__header">
-
-        <header class="header">
-    
-            <div>
-                <picture>
-                <a href="#inicio" class="logo-link" title="logo" >
-                    <img src="./assets/logo_vvmr.png" alt="Logo" class="logo">
-                </a>
-            </picture>
-            </div>
-        <!--menu hamburguesa-->
-            <button class="nav__toggle" id="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            
-    
-            <nav class="header__nav" id="nav-menu">
-                <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="#inicio" title="inicio" >Inicio</a></li>
-                    <li class="header__item"><a class="header__link" href="#sobremi" title="sobremi">Sobre Mí</a></li>
-                    <li class="header__item"><a class="header__link" href="#habilidades" title="habilidades" >Habilidades</a></li>
-                    <li class="header__item"><a class="header__link" href="#tatuajes" title="tatuajes">Tatuajes</a></li>
-                    <li class="header__item"><a class="header__link" href="#curriculum" title="curriculum">Curriculum</a></li>
-                    <li class="header__item"><a class="header__link" href="#portfolio" title="portfolio">Portfolio</a></li>
-                    <li class="header__item"><a class="header__link" href="#contacto" title="contacto">Contacto</a></li>
-                </ul>
-            </nav>
-
-        </header>
-        
+<!-- header -->
+<div class="contenedor__header">
+    <header class="header">
+        <div>
+        <picture>
+            <a href="#inicio" class="logo-link" title="logo">
+            <img src="/images/logo_positivo.png" alt="Logo de María Valcárcel" class="logo">
+            </a>
+        </picture>
     </div>
+    <!-- menú hamburguesa -->
+    <button class="nav__toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- menú principal -->
+    <nav class="header__nav" id="nav-menu">
+        <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#inicio">Inicio</a></li>
+            <li class="header__item"><a class="header__link" href="#sobremi">Sobre Mí</a></li>
+            <li class="header__item"><a class="header__link" href="#habilidades">Habilidades</a></li>
+            <li class="header__item"><a class="header__link" href="#tatuajes">Tatuajes</a></li>
+            <li class="header__item"><a class="header__link" href="#curriculum">Currículum</a></li>
+            <li class="header__item"><a class="header__link" href="#portfolio">Portfolio</a></li>
+            <li class="header__item"><a class="header__link" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+</div>
+
     <main class="main_content">
-        <!-- inicio -->
-        <section id="inicio" class="inicio">
-            <div class="contenido--banner">
-                
-                <div class="contenedor__img">
-                    
-                    <picture><img src="./assets/images/foto cv.PNG" alt="María" class="img__maria"></picture>
-                </div>
-                <h1 class="banner__nombre">María Valcárcel</h1>
-                <h2 class="banner__descripcion">Diseñadora y tatuadora en formación - Diseño gráfico - Diseño Web - Diseño UX/UI</h2>
-                <div class="redes">
-                    <a href="https://facebook.com" class="redes__link" title="Visitar mi Facebook" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://twitter.com" class="redes__link" title="Visitar mi Twitter" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com" class="redes__link" title="Visitar mi Instagram" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://linkedin.com" class="redes__link" title="Visitar mi LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Sobre Mí seccion -->
-        <section id="sobremi" class="sobremi">
-            <div class="sobremi__contenido">
-                <h2 class="sobremi__title">Sobre Mí</h2>
-                <p class="sobremi__text">
-                    Para mí, el arte es una forma de dejar huella, ya sea en la piel o en un proyecto digital. Combino Tatuajes y Diseño Gráfico para crear piezas únicas y con significado.
-                    Cada tatuaje es personal. Escucho ideas, trabajo en diseños exclusivos y creo algo que va más allá de un dibujo: un símbolo que te acompañará siempre. 
-                    El diseño es donde todo empieza. Desde logotipos hasta ilustraciones, mi objetivo es que cada proyecto comunique y conecte. Siempre busco que lo que creo cuente algo y deje impacto. 
-                    Si tienes una idea, hablemos. Estoy aquí para crear contigo. </p>
-    
-                    <div class="sobremi__list">
-                        <div class="list__datos">
-                            <h3 class="datos__title">Datos Personales</h3>
-                            <ul class="datos__list">
-                                <li class="datos__item">
-                                    <strong class="datos__itemcolor">Telefono</strong>
-                                    +34 675076859
-                                </li>
-                                <li class="datos__item">
-                                    <strong class="datos__itemcolor">Gmail</strong>
-                                    mariavalcarcelruiz01@gmail.com
-                                </li>
-                                <li class="datos__item">
-                                    <strong class="datos__itemcolor">Ubicaciones</strong>
-                                    Linares,Jaén & Granada.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="intereses">
-                            <h3 class="intereses__title">Intereses</h3>
-                            <div class="intereses__contenido">
-                                <ul class="intereses__list">
-                                <li class="intereses__item">
-                                    <span>Tatuajes</span> 
-                                </li>
-                                <li class="intereses__item">
-                                    <span>Música</span> 
-                                </li>
-                                <li class="intereses__item">
-                                    <span>Historias</span> 
-                                </li>
-                                <li class="intereses__item">
-                                    <span>Diseño Gráfico</span> 
-                                </li>
-                                <li class="intereses__item">
-                                    <span>Culturas</span> 
-                                </li>
-                                <li class="intereses__item">
-                                    <span>Viajes</span> 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="assets/archivo/Cv_MaríaValcárcel.pdf" download="Cv_MaríaValcárcel" class="descargar__cv" title="Descargar mi CV">
-                        <div class="descargarcv__boton">
-                            Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
-                        </div>
-                    </a>
-                    
-            </div>
-        </section>
+    <!--inicio -->
+    <section id="inicio" class="inicio">
+    <div class="contenido--banner">
+        <picture>
+            <img src="/images/foto cv.jpg" alt="Retrato de María Valcárcel" class="img__maria">
+        </picture>
+        <h1 class="banner__nombre">María Valcárcel</h1>
+        <h2 class="banner__descripcion">Diseñadora y tatuadora en formación - Diseño gráfico - Diseño Web - Diseño UX/UI</h2>
+        <div class="redes">
+            <a href="https://facebook.com" class="redes__link" title="Facebook" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="redes__link" title="Twitter" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" class="redes__link" title="Instagram" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="redes__link" title="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    </section>
 
-    <!-- habilidades de adobe -->
+    <!-- spbre mi -->
+    <section id="sobremi" class="sobremi">
+    <div class="sobremi__contenido">
+        <h2 class="sobremi__title">Sobre Mí</h2>
+        <p class="sobremi__text">
+            Para mí, el arte es una forma de dejar huella, ya sea en la piel o en un proyecto digital. Combino Tatuajes y Diseño Gráfico para crear piezas únicas y con significado. Cada tatuaje es personal. Escucho ideas, trabajo en diseños exclusivos y creo algo que va más allá de un dibujo: un símbolo que te acompañará siempre.
+        </p>
+        <div class="sobremi__list">
+            <div class="list__datos">
+            <h3 class="datos__title">Datos Personales</h3>
+            <ul class="datos__list">
+                <li class="datos__item"><strong class="datos__itemcolor">Teléfono:</strong> +34 675076859</li>
+                <li class="datos__item"><strong class="datos__itemcolor">Email:</strong> mariavalcarcelruiz01@gmail.com</li>
+                <li class="datos__item"><strong class="datos__itemcolor">Ubicación:</strong> Linares, Jaén & Granada</li>
+            </ul>
+        </div>
+        <div class="intereses">
+            <h3 class="intereses__title">Intereses</h3>
+            <ul class="intereses__list">
+                <li class="intereses__item">Tatuajes</li>
+                <li class="intereses__item">Música</li>
+                <li class="intereses__item">Historias</li>
+                <li class="intereses__item">Diseño Gráfico</li>
+                <li class="intereses__item">Culturas</li>
+                <li class="intereses__item">Viajes</li>
+            </ul>
+        </div>
+        </div>
+        <a href="./assets/archivo/cv-maria-valcarcel.pdf" download="cv-maria-valcarcel" class="descargar__cv" title="Descargar mi CV">
+            <div class="descargarcv__boton">Descargar CV <i class="fa-solid fa-file-arrow-down"></i></div>
+        </a>
+            </div>
+    </section>
+
+    <!-- habilidades -->
     <section id="habilidades" class="habilidades">
-        <h2 class="habilidades__title">Habilidades</h2>
-        <div class="habilidades__contenido">
-            <div class="habilidades__titulo-y-item">
-                
-                <div class="habilidades__item">
-                    <h3 class="habilidades__item-title">Paquete Adobe</h3>
-                    <ul class="habilidades__sublista">
-                        <li class="habilidades__subitem">
-                            <i class="fas fa-paint-brush habilidades__icon"></i> 
-                                <strong class="habilidades__subitem-ap">Adobe Photoshop</strong> 
-                        </li>
-                        <li class="habilidades__subitem">
-                            <i class="fas fa-vector-square habilidades__icon"></i>
-                            <strong class="habilidades__subitem-ai">Adobe Illustrator</strong>   
-                        </li>
-                        <li class="habilidades__subitem">
-                            <i class="fas fa-file-alt habilidades__icon"></i>
-                            <strong class="habilidades__subitem-ad">Adobe InDesign</strong>  
-                        </li>
-                        <li class="habilidades__subitem">
-                            <i class="fas fa-video habilidades__icon"></i>
-                            <strong class="habilidades__subitem-app">Adobe Premiere Pro</strong>  
-                        </li>
-                        <li class="habilidades__subitem">
-                            <i class="fas fa-play-circle habilidades__icon"></i>
-                            <strong class="habilidades__subitem-aae">Adobe After Effects</strong> 
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- habiliades personales -->
-            <div class="habilidades__titulo-y-item">
-                <h3 class="habilidades__item-title">Habilidades Personales</h3>
-                <ul class="habilidades__sublista">
-                    <li class="habilidades__subitem">
-                        <strong class="habilidades__subitem-title">Creatividad</strong>: Siempre busco soluciones innovadoras y únicas.
-                    </li>
-                    <li class="habilidades__subitem">
-                        <strong class="habilidades__subitem-title">Trabajo en equipo</strong>: Me encanta colaborar con otros para alcanzar objetivos comunes.
-                    </li>
-                    <li class="habilidades__subitem">
-                        <strong class="habilidades__subitem-title">Gestión del tiempo</strong>: Organizo mis tareas de forma eficiente para cumplir plazos.
-                    </li>
-                    <li class="habilidades__subitem">
-                        <strong class="habilidades__subitem-title">Adaptabilidad</strong>: Me adapto rápidamente a nuevos entornos y cambios.
-                    </li>
-                    <li class="habilidades__subitem">
-                        <strong class="habilidades__subitem-title">Comunicación</strong>: Soy capaz de comunicarme de manera clara y efectiva con los demás.
-                    </li>
-                </ul>
-            </div>
+    <h2 class="habilidades__title">Habilidades</h2>
+    <div class="habilidades__contenido">
+        <div class="habilidades__titulo-y-item">
+            <h3 class="habilidades__item-title">Paquete Adobe</h3>
+        <ul class="habilidades__sublista">
+            <li class="habilidades__subitem"><strong class="habilidades__subitem-ap">Adobe Photoshop</strong></li>
+            <li class="habilidades__subitem"><strong class="habilidades__subitem-ai">Adobe Illustrator</strong></li>
+            <li class="habilidades__subitem"><strong class="habilidades__subitem-ad">Adobe InDesign</strong></li>
+            <li class="habilidades__subitem"><strong class="habilidades__subitem-app">Adobe Premiere Pro</strong></li>
+            <li class="habilidades__subitem"><strong class="habilidades__subitem-aae">Adobe After Effects</strong></li>
+        </ul>
         </div>
+        <div class="habilidades__titulo-y-item">
+            <h3 class="habilidades__item-title">Habilidades Personales</h3>
+            <ul class="habilidades__sublista">
+            <li class="habilidades__subitem">Creatividad</li>
+            <li class="habilidades__subitem">Trabajo en equipo</li>
+            <li class="habilidades__subitem">Gestión del tiempo</li>
+            <li class="habilidades__subitem">Adaptabilidad</li>
+            <li class="habilidades__subitem">Comunicación</li>
+            </ul>
+        </div>
+    </div>
     </section>
-    <!-- Tatuajes -->
+
+    <!--galería tatuajes -->
     <section id="tatuajes" class="galeria-tatuajes">
-        <h2 class="galeria-tatuajes__title">Galería de Tatuajes</h2>
-        <div class="galeria-tatuajes__grid">
-            <div class="galeria-tatuajes__item">
-                <picture><img src="./assets/images/tatto1.png" alt="Tatuaje 1" class="galeria-tatuajes__img"  loading="lazy"></picture>
-            </div>
-            <div class="galeria-tatuajes__item">
-                <picture><img src="./assets/images/tattoo2.png" alt="Tatuaje 2" class="galeria-tatuajes__img"  loading="lazy"></picture>
-            </div>
-            <div class="galeria-tatuajes__item">
-                <picture><img src="./assets/images/tattoo3.png" alt="Tatuaje 3" class="galeria-tatuajes__img"  loading="lazy"></picture>
-            </div>
-            <div class="galeria-tatuajes__item">
-                <picture><img src="./assets/images/tattoo4.png" alt="Tatuaje 4" class="galeria-tatuajes__img"  loading="lazy"></picture>
-            </div>
-            <div class="galeria-tatuajes__item">
-                <picture><img src="./assets/images/tattoo5.png" alt="Tatuaje 5" class="galeria-tatuajes__img"  loading="lazy"></picture>
-            </div>
-            <div class="galeria-tatuajes__item">
-                <picture><img src="./assets/images/tattoo6.png" alt="Tatuaje 6" class="galeria-tatuajes__img"  loading="lazy"></picture>
-            </div>
+    <h2 class="galeria-tatuajes__title">Galería de Tatuajes</h2>
+    <div class="galeria-tatuajes__grid">
+        <div class="galeria-tatuajes__item"><picture><img src="/images/tatto1.png" alt="Tatuaje 1" class="galeria-tatuajes__img" loading="lazy"></picture></div>
+        <div class="galeria-tatuajes__item"><picture><img src="/images/tattoo2.png" alt="Tatuaje 2" class="galeria-tatuajes__img" loading="lazy"></picture></div>
+        <div class="galeria-tatuajes__item"><picture><img src="/images/tattoo3.png" alt="Tatuaje 3" class="galeria-tatuajes__img" loading="lazy"></picture></div>
+        <div class="galeria-tatuajes__item"><picture><img src="/images/tattoo4.png" alt="Tatuaje 4" class="galeria-tatuajes__img" loading="lazy"></picture></div>
+        <div class="galeria-tatuajes__item"><picture><img src="/images/tattoo5.png" alt="Tatuaje 5" class="galeria-tatuajes__img" loading="lazy"></picture></div>
+        <div class="galeria-tatuajes__item"><picture><img src="/images/tattoo6.png" alt="Tatuaje 6" class="galeria-tatuajes__img" loading="lazy"></picture></div>
         </div>
     </section>
-    
-    <!-- Sección de Curriculum -->
+
+    <!-- cv -->
     <section id="curriculum" class="curriculum">
-        <h2 class="curriculum__title">Curriculum</h2>
-            <div class="curriculum__formacion">
-                <h3 class="formacion__title">Formación</h3>
-                <p class="formacion__texto">Mi formación comenzó con el Bachillerato de Sociales en 2020. Tras finalizarlo, me mudé a Granada para estudiar el ciclo de Técnico Superior en Diseño y Edición de Publicaciones Impresas y Multimedia, donde consolidé mis conocimientos en diseño gráfico y técnicas multimedia.
-
-                A lo largo de mi trayectoria, también he comenzado a adentrarme en el mundo del tatuaje de forma autónoma, lo que me ha permitido explorar mi creatividad de una manera única. Además, he complementado mi formación con cursos especializados en Photoshop 3D, Adobe After Effects y Marketing Digital, que me han brindado habilidades valiosas en el ámbito digital.
-            
-                Por último, cuento con el carnet de conducir y el nivel B1 de inglés, lo que me permite comunicarme con fluidez en entornos internacionales.</p>
-            </div>
-            <div class="curriculum__experiencia">
-                <h3 class="experiencia__title">Experiencia</h3>
-                <p class="experiencia__texto">
-                Aún no he trabajado de manera formal, pero he tenido la oportunidad de realizar prácticas en Polonia, donde pude desarrollar varias habilidades. Además, he recibido encargos de personas de mi entorno, principalmente en diseño de tatuajes, logotipos para telefonía, y para crear sellos e identidades corporativas. En el mundo del tatuaje, he ido adentrándome con la ayuda de otros tatuadores, y he tenido la experiencia de tatuar a personas de mi círculo cercano. Esto me ha permitido mejorar mis habilidades y afianzarme en este campo.</p>
-            </div>
+    <h2 class="curriculum__title">Currículum</h2>
+    <div class="curriculum__formacion">
+        <h3 class="formacion__title">Formación</h3>
+        <p class="formacion__texto">Estudios en Bachillerato de Sociales y Técnico Superior en Diseño y Edición de Publicaciones Impresas y Multimedia. Complementado con cursos en Photoshop 3D, After Effects y Marketing Digital. Nivel B1 de inglés y carnet de conducir.</p>
+    </div>
+    <div class="curriculum__experiencia">
+        <h3 class="experiencia__title">Experiencia</h3>
+        <p class="experiencia__texto">Prácticas en Polonia, encargos de diseño gráfico y tatuaje a personas de mi entorno. Colaboraciones con otros tatuadores y experiencias reales que han fortalecido mi técnica.</p>
+    </div>
     </section>
 
-    <!-- Portfolio-->
+    <!-- portfolio -->
     <section id="portfolio" class="portfolio">
-        <h2 class="portfolio__title">Portfolio</h2>
-            <p class="portfolio__text">Estos son algunos de los proyectos que he realizado.</p> 
-            <p class="portfolio__text"> ¡Espero que te gusten!</p>
+    <h2 class="portfolio__title">Portfolio</h2>
+    <p class="portfolio__text">Algunos de los proyectos que he realizado. ¡Espero que te gusten!</p>
         <div class="portfolio__contenido">
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/pryoectouno__estrella.png" alt="pryoectouno__estrella"  class="portfolio__img"  loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectodos_dibujo.png" alt="proyectodos_dibujo"  class="portfolio__img"   loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectotres__dibujo.png" alt="proyectotres__dibujo"  class="portfolio__img"  loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectocuatro_cartel.png" alt="proyectocuatro_cartel"  class="portfolio__img"   loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectocinco_corazon.png" alt="proyectocinco_corazon"  class="portfolio__img"  loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectoseis__pantone.png" alt="proyectoseis__pantone"  class="portfolio__img"   loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectosiet_underground.png" alt="proyectosiet_underground"  class="portfolio__img"  loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture></picture><img src="./assets/images/proyectocho_revista.png" alt="proyectocho_revista"  class="portfolio__img" loading="lazy" ></picture>
-                
-            </div>
-            <div class="portfolio__card">
-                <picture><img src="./assets/images/proyectonueve_htd.png" alt="proyectonueve_htd"  class="portfolio__img" loading="lazy"></picture>
-            </div>
-            
+        <div class="portfolio__card"><picture><img src="/images/pryoectouno__estrella.jpg" alt="Proyecto estrella diseño" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectodos_dibujo.jpg" alt="Ilustración a mano" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectotres__dibujo.jpg" alt="Cartel publicitario" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectocuatro_cartel.jpg" alt="Diseño con paleta Pantone" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectocho_revista.jpg" alt="Diseño editorial para revista" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectocinco_corazon.jpg" alt="Diseño corazon espinas" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectoseis__pantone.jpg" alt="Diseño pantone" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectosiet_underground.jpg" alt="Diseño editorial para revista" class="portfolio__img" loading="lazy"></picture></div>
+        <div class="portfolio__card"><picture><img src="/images/proyectonueve_htd.jpg" alt="Diseño café" class="portfolio__img" loading="lazy"></picture></div>
+
+
+
+    </div>
     </section>
 
-    <!-- contacto-->
+    <!-- contacto form -->
     <section id="contacto" class="contacto">
-        <div class="contacto__contenido">
-            <h2 class="contacto__title">Pongamonos en contacto</h2>
-            <form action="#" method="post" class="contacto__formulario">
-                <div class="contacto__input">
-                    <label for="nombre" class="contacto__label">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" class="contacto__input" required>
-                </div>
-                <div class="contacto__input">
-                    <label for="emasil" class="contacto__label">Correo electrónico</label>
-                    <input type="email" id="email" name="email" class="contacto__input" required>
-                </div>
-                <div class="contacto__input">
-                    <label for="mensaje">Mensaje</label>
-                    <input id="mensaje" name="mensaje" class="contacto__input" type="text" required>
-                </div>                
-                <button type="submit" class="contacto__btn">Enviar</button>
-            </form>
+    <div class="contacto__contenido">
+        <h2 class="contacto__title">Pongámonos en contacto</h2>
+        <form action="#" method="post" class="contacto__formulario">
+        <div class="contacto__input">
+            <label for="nombre" class="contacto__label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="contacto__input" required>
         </div>
+        <div class="contacto__input">
+            <label for="email" class="contacto__label">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="contacto__input" required>
+        </div>
+        <div class="contacto__input">
+            <label for="mensaje" class="contacto__label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="contacto__input" required></textarea>
+        </div>
+        <button type="submit" class="contacto__btn">Enviar</button>
+        </form>
+    </div>
     </section>
     </main>
 
+    <!-- footer  -->
     <footer>
-        <div class="footer__contenido">
-            <picture><img src="./assets/images/logo_positivo.png" alt="logo" class="footer_logo" loading="lazy"></picture>
-            <p class="footer_text">&copy; 2025 Portfolio | María Valcarcel Ruiz</p>
-            
-            
-        </div>
+    <div class="footer__contenido">
+        <picture><img src="./assets/images/logo-positivo.png" alt="Logo positivo" class="footer_logo" loading="lazy"></picture>
+        <p class="footer_text">&copy; 2025 Portfolio | María Valcárcel Ruiz</p>
+    </div>
     </footer>
 
-    <script src="./assets/js/galeria.js"></script>
+<!--  java-script -->
+    <script src="./js/galeria.js"></script>
 </body>
 </html>

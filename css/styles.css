@@ -6,6 +6,18 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
+:root {
+    --color-principal: #ef7f08;
+    --color-header: #575555;
+    --color-claro: #ffffff;
+    --color-oscuro: #000000;
+    --color-banner: #3f3f3f;
+    --color-footer: #575555;
+    --color-gris: #808080;
+    --color-boton: #929191;
+    --color-hover: #333333;
+}
+
 
 html {
     scrollbar-width: none; /* Firefox */
@@ -18,7 +30,7 @@ body::-webkit-scrollbar {
 
 /* Contenedores */
 .contenedor__header {
-    background: #575555;
+    background-color: var(--color-header);
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -51,7 +63,7 @@ body::-webkit-scrollbar {
     background-color: transparent;
     border: none;
     font-size: 24px;
-    color: #ffffff;
+    color: var(--color-claro);
     cursor: pointer;
 }
 
@@ -68,7 +80,7 @@ body::-webkit-scrollbar {
         position: absolute;
         top: 80px; 
         right: 0;
-        background-color: #575555;
+        background-color:var(--color-principal);
         width: 100%;
         padding: 20px;
         transition: max-height 0.3s ease-out, padding 0.3s ease-out; 
@@ -94,7 +106,7 @@ body::-webkit-scrollbar {
 
 /* Estilos de los enlaces */
 .header__link {
-    color: #ffffff;
+    color: var(--color-claro);
     margin: 0 15px;
     padding: 0;
     transition: 0.5s;
@@ -103,7 +115,7 @@ body::-webkit-scrollbar {
 
 /* Color de los enlaces al pasar el ratón */
 .header__link:hover {
-    color: #ef7f08;
+    color: var(--color-principal);
 }
 
 /* Lista de enlaces */
@@ -124,7 +136,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(to top, #1e2326cc, #1e2326), url(../images/banner_inicial.png);
     background-size: cover;
     width: 100vw;
-    color: #ffffff;
+    color: var(--color-claro);
     display: flex;
     align-items: center;
 }
@@ -132,7 +144,7 @@ body::-webkit-scrollbar {
 /* tarjeta */
 .contenido--banner {
     padding: 20px;
-    background-color: #3f3f3f;
+    background-color: var(--color-banner);
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -142,7 +154,7 @@ body::-webkit-scrollbar {
 /* imagen */
 .img__maria {
     margin: 50px auto 0 auto;
-    border: 5px solid #ef7f08;
+    border: 5px solid var(--color-principal);
     width: 80%;
     border-radius: 20%;
 }
@@ -164,10 +176,10 @@ body::-webkit-scrollbar {
 
 /* formatos de iconos de rrss */
 .redes__link {
-    color: #ffffff;
+    color: var(--color-claro);
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #ef7f08;
+    border: 1px solid var(--color-principal);
     border-radius: 12px;
     width: 42px;
     padding: 0;
@@ -180,7 +192,7 @@ body::-webkit-scrollbar {
 
 /* transición naranja */
 .redes__link:hover {
-    background-color: #ef7f08;
+    background-color: var(--color-principal);
 }
 
 
@@ -188,8 +200,8 @@ body::-webkit-scrollbar {
 
 /* seccion sobre mi */
 .sobremi {
-    background-color: #ef7f08;
-    color: #ffffff;
+    background-color: var(--color-principal);
+    color: var(--color-claro);
     padding: 40px 40px;
     width: 100vw;
 }
@@ -239,7 +251,7 @@ body::-webkit-scrollbar {
 }
 .datos__itemcolor {
     display: inline-block;
-    color: #000000;
+    color: var(--color-oscuro);
 }
 
 /* sobre mi intereses */
@@ -277,8 +289,8 @@ body::-webkit-scrollbar {
 .descargarcv__boton {
     font-size: 20px;
     background-color: transparent;
-    color: #ffffff;
-    border: 3px solid #ffffff;
+    color: var(--color-claro);
+    border: 3px solid var(--color-claro);
     display: block;
     margin: 20px;
     padding: 10px;
@@ -288,8 +300,8 @@ body::-webkit-scrollbar {
 /* HABILIDADES */
 /* contenedor */
 .habilidades {
-    background-color: #808080;
-    color: #ffffff;
+    background-color: var(--color-gris);
+    color: var(--color-claro);
     padding: 25px 40px;
     flex-wrap: wrap;
     width: 100vw;
@@ -305,7 +317,7 @@ body::-webkit-scrollbar {
 /* título habilidades */
 .habilidades__title {
     font-size: 2.5em;
-    color: #ffffff;
+    color: var(--color-claro);
     padding: 10px;
     text-align: center;
 }
@@ -313,7 +325,7 @@ body::-webkit-scrollbar {
 /* items */
 .habilidades__item-title {
     font-size: 25px;
-    color: #ef7f08;
+    color: var(--color-principal);
     margin: 10px;
     padding: 10px;
 }
@@ -321,7 +333,7 @@ body::-webkit-scrollbar {
 /* lista y título habilidades */
 .habilidades__titulo-y-item {
     padding: 20px;
-    border: 2px solid #ef7f08;
+    border: 2px solid var(--color-principal);
     border-radius: 10px;
     margin: 20px;
 }
@@ -369,7 +381,7 @@ body::-webkit-scrollbar {
 /* título */
 .galeria-tatuajes__title {
     font-size: 2.5em;
-    color: #ffffff;
+    color: var(--color-claro);
     margin:0 0 20px 0;
 }
 
@@ -407,7 +419,7 @@ body::-webkit-scrollbar {
 }
 /* EXPERIENCIA */
 .curriculum {
-    background-color: #ef7f08;
+    background-color: var(--color-principal);
     display: block;
     padding: 40px 20px;
     width: 100vw;
@@ -418,7 +430,7 @@ body::-webkit-scrollbar {
     margin: 0 0 20px 0;
     text-align: center;
     font-size: 2.5em;
-    color: #ffffff;
+    color: var(--color-claro);
     flex-wrap: wrap;
 }
 
@@ -433,7 +445,7 @@ body::-webkit-scrollbar {
 .formacion__title {
     padding: 10px;
     font-size: 25px;
-    color: #ffffff;
+    color: var(--color-claro);
 }
 
 /* tarjeta experiencia */
@@ -448,7 +460,7 @@ body::-webkit-scrollbar {
 .experiencia__title {
     padding: 10px;
     font-size: 25px;
-    color: #ffffff;
+    color: var(--color-claro);
 }
 
 /*seccion portfolio*/
@@ -467,7 +479,7 @@ body::-webkit-scrollbar {
 .portfolio {
     background-color: black;
     width: 100vw;
-    color: #ffffff;
+    color: var(--color-claro);
     padding: 2px;
     overflow: hidden;
 }
@@ -482,7 +494,7 @@ body::-webkit-scrollbar {
 /*titutlo de seccion*/
 .portfolio__title {
     font-size: 2.5em;
-    color: #ef7f08;
+    color: var(--color-principal);
     text-align: center;
     padding: 30px;
 }
@@ -520,7 +532,7 @@ body::-webkit-scrollbar {
 
 /* estilos de la sección de contacto */
 .contacto {
-    background-color: #ef7f08;
+    background-color: var(--color-principal);
     color: #333;
     padding: 40px;
     width: 100vw;
@@ -568,8 +580,8 @@ body::-webkit-scrollbar {
 
 /* botón enviar */
 .contacto__btn {
-    background-color: #929191;
-    color: #ffffff;
+    background-color: var(--color-boton);
+    color: var(--color-claro);
     font-size: 1.2em;
     padding: 10px 20px;
     border: none;
@@ -585,7 +597,7 @@ body::-webkit-scrollbar {
 
 /*footer*/
 .footer__contenido{
-    background-color:#575555 ;
+    background-color:var(--color-principal) ;
     display: flex;
     justify-content: center;
     width: 100vw;
