@@ -133,7 +133,7 @@ body::-webkit-scrollbar {
     flex-grow: 1;
 }
 .inicio {
-    background: linear-gradient(to top, #1e2326cc, #1e2326), url(../images/banner_inicial.png);
+    background: linear-gradient(to top, #1e2326cc, #1e2326), url(../images/banner_inicial.jpg);
     background-size: cover;
     width: 100vw;
     color: var(--color-claro);
@@ -204,12 +204,15 @@ body::-webkit-scrollbar {
     color: var(--color-claro);
     padding: 40px 40px;
     width: 100vw;
+    
 }
 
 /* como se ve el contenido 1 */
 .sobremi__contenido {
     max-width: 1200px;
-    margin: 20px;
+    margin: 0 auto; 
+    padding: 20px;
+    
 }
 
 /* estilos titulo sobre mi */
@@ -223,15 +226,17 @@ body::-webkit-scrollbar {
 .sobremi__text {
     font-size: 18px;
     line-height: 22px;
-    margin: 0 0 5px 0; /* 0 arriba, 0 derecha, 5px abajo, 0 izquierda */
+    margin: 0 0 5px 0; 
     text-align: justify;
 }
 
 /* sobre mi lista datos personales */
 .sobremi__list {
     display: flex;
-    margin: 30px;
+    margin: 30px 0; 
     flex-wrap: wrap;
+    justify-content: center; 
+    gap: 50px; 
 }
 
 /* sobra mi título datos personales */
@@ -256,7 +261,8 @@ body::-webkit-scrollbar {
 
 /* sobre mi intereses */
 .sobremi__intereses {
-    width: 50%;
+    width: 100%;
+    max-width: 400px;
 }
 
 /* sobre mi título intereses */
@@ -283,6 +289,7 @@ body::-webkit-scrollbar {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 /* darle forma a la caja download */
@@ -425,6 +432,8 @@ body::-webkit-scrollbar {
     width: 100vw;
 }
 
+
+
 /* título */
 .curriculum__title {
     margin: 0 0 20px 0;
@@ -434,34 +443,44 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
 }
 
-/* tarjeta formación */
-.curriculum__formacion {
+/* tarjeta curriculum headers*/
+.curriculum-item {
+    background-color: lightslategrey;
     border: 3px solid grey;
     padding: 20px;
     border-radius: 20px;
 }
 
-/* título formación */
-.formacion__title {
+
+.curriculum__header {
     padding: 10px;
     font-size: 25px;
     color: var(--color-claro);
 }
 
-/* tarjeta experiencia */
-.curriculum__experiencia {
-    border: 3px solid grey;
-    padding: 20px;
-    margin: 20px 0 0 0;
-    border-radius: 20px;
+
+/*Para js acordeon*/
+.curriculum__content{
+    color: var(--color-claro);
+    display: none;
 }
 
-/* título experiencia */
-.experiencia__title {
+
+/* Activar acordeon*/
+
+.active .curriculum__content{
+    display: block;
+}
+
+.active .curriculum__header {
     padding: 10px;
     font-size: 25px;
-    color: var(--color-claro);
+    color: var(--color-principal);
+    text-shadow: #000000 1px 1px;
 }
+
+
+
 
 /*seccion portfolio*/
 /*   imágenes portfolio */

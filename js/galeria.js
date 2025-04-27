@@ -7,3 +7,17 @@ const navMenu = document.getElementById('nav-menu');
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
+
+// Acordeon
+const headers = document.querySelectorAll('.curriculum__header');
+const items = document.querySelectorAll('.curriculum-item');
+
+headers.forEach((header) => {
+    header.addEventListener('click', () => {
+        const item = header.closest('.curriculum-item');
+        items.forEach((item) => {
+            item.classList.remove('active');
+        });
+        item.classList.add('active');
+    });
+});
